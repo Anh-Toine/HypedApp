@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		803C1A2D28F077C5009232CC /* ImagePicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 803C1A2C28F077C5009232CC /* ImagePicker.swift */; };
 		80F3331C28EC752C00D64FE8 /* HypedApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80F3331B28EC752C00D64FE8 /* HypedApp.swift */; };
 		80F3331E28EC752C00D64FE8 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80F3331D28EC752C00D64FE8 /* ContentView.swift */; };
 		80F3332028EC752E00D64FE8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 80F3331F28EC752E00D64FE8 /* Assets.xcassets */; };
@@ -20,6 +21,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		803C1A2C28F077C5009232CC /* ImagePicker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImagePicker.swift; sourceTree = "<group>"; };
 		80F3331828EC752C00D64FE8 /* Hyped.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Hyped.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		80F3331B28EC752C00D64FE8 /* HypedApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HypedApp.swift; sourceTree = "<group>"; };
 		80F3331D28EC752C00D64FE8 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -105,6 +107,7 @@
 			isa = PBXGroup;
 			children = (
 				80F3333528EC88E800D64FE8 /* FormLabelView.swift */,
+				803C1A2C28F077C5009232CC /* ImagePicker.swift */,
 			);
 			path = Components;
 			sourceTree = "<group>";
@@ -182,6 +185,7 @@
 				80F3331E28EC752C00D64FE8 /* ContentView.swift in Sources */,
 				80F3331C28EC752C00D64FE8 /* HypedApp.swift in Sources */,
 				80F3332A28EC76FB00D64FE8 /* UpcomingView.swift in Sources */,
+				803C1A2D28F077C5009232CC /* ImagePicker.swift in Sources */,
 				80F3333428EC833A00D64FE8 /* CreateHypeEventView.swift in Sources */,
 				80F3332D28EC770D00D64FE8 /* DiscoverView.swift in Sources */,
 				80F3333628EC88E800D64FE8 /* FormLabelView.swift in Sources */,

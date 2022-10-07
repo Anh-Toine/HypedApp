@@ -7,9 +7,11 @@
 
 import SwiftUI
 
+
 struct CreateHypeEventView: View {
 	
 	@StateObject var hypeEvent = HypeEvent()
+	@State var showTime = false
 	
     var body: some View {
 		Form {
@@ -21,11 +23,18 @@ struct CreateHypeEventView: View {
 			}
 			Section {
 				FormLabelView(title: "Date", iconName: "calendar")
-				DatePicker("Date", selection: $hypeEvent.date, displayedComponents: [.date, .hourAndMinute])
+				DatePicker("Date", selection: $hypeEvent.date, displayedComponents: showTime ? [.date, .hourAndMinute] : [.date])
 					.datePickerStyle(GraphicalDatePickerStyle())
+
+				Toggle(isOn: $showTime) {
+					FormLabelView(title: "Time", iconName: "clock.fill")
+				}
+				.tint(.blue)
 			}
 			Section {
 				
+			}
+			Section {
 				ColorPicker(selection: $hypeEvent.color) {
 					FormLabelView(title: "Color", iconName: "eyedropper", color: .yellow)
 				}
