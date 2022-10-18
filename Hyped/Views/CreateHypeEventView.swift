@@ -69,6 +69,7 @@ struct CreateHypeEventView: View {
 				} else {
 					HStack {
 						FormLabelView(title: "Image", iconName: "camera", color: .purple)
+						Spacer()
 						Button(action: {
 							showImagePicker = true
 						}) {
