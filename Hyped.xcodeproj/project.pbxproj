@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		803C1A2D28F077C5009232CC /* ImagePicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 803C1A2C28F077C5009232CC /* ImagePicker.swift */; };
+		80A67C4828FEFE6000BB1FF6 /* TileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80A67C4728FEFE6000BB1FF6 /* TileView.swift */; };
 		80F3331C28EC752C00D64FE8 /* HypedApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80F3331B28EC752C00D64FE8 /* HypedApp.swift */; };
 		80F3331E28EC752C00D64FE8 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80F3331D28EC752C00D64FE8 /* ContentView.swift */; };
 		80F3332028EC752E00D64FE8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 80F3331F28EC752E00D64FE8 /* Assets.xcassets */; };
@@ -22,6 +23,7 @@
 
 /* Begin PBXFileReference section */
 		803C1A2C28F077C5009232CC /* ImagePicker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImagePicker.swift; sourceTree = "<group>"; };
+		80A67C4728FEFE6000BB1FF6 /* TileView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TileView.swift; sourceTree = "<group>"; };
 		80F3331828EC752C00D64FE8 /* Hyped.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Hyped.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		80F3331B28EC752C00D64FE8 /* HypedApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HypedApp.swift; sourceTree = "<group>"; };
 		80F3331D28EC752C00D64FE8 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -107,6 +109,7 @@
 			isa = PBXGroup;
 			children = (
 				80F3333528EC88E800D64FE8 /* FormLabelView.swift */,
+				80A67C4728FEFE6000BB1FF6 /* TileView.swift */,
 				803C1A2C28F077C5009232CC /* ImagePicker.swift */,
 			);
 			path = Components;
@@ -190,6 +193,7 @@
 				80F3332D28EC770D00D64FE8 /* DiscoverView.swift in Sources */,
 				80F3333628EC88E800D64FE8 /* FormLabelView.swift in Sources */,
 				80F3333228EC82AF00D64FE8 /* HypeEvent.swift in Sources */,
+				80A67C4828FEFE6000BB1FF6 /* TileView.swift in Sources */,
 				80F3332F28EC771300D64FE8 /* PastView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

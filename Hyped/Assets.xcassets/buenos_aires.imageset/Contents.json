@@ -1,0 +1,12 @@
+{
+  "images" : [
+    {
+      "filename" : "buenos_aires.jpeg",
+      "idiom" : "universal"
+    }
+  ],
+  "info" : {
+    "author" : "xcode",
+    "version" : 1
+  }
+}

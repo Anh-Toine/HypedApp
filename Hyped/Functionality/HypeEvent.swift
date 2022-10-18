@@ -7,8 +7,9 @@
 
 import SwiftUI
 
-class HypeEvent: ObservableObject {
+class HypeEvent: ObservableObject, Identifiable {
 	
+	var id = UUID().uuidString
 	var date = Date()
 	var title = ""
 	var url = ""
@@ -23,4 +24,32 @@ class HypeEvent: ObservableObject {
 		}
 		return nil
 	}
+}
+
+// Test data with image
+var testHypeEent1: HypeEvent {
+	let hypeEvent = HypeEvent()
+	
+	if let image = UIImage(named: "buenos_aires") {
+		if let data = image.pngData() {
+			hypeEvent.imageData = data
+		}
+	}
+	hypeEvent.title = "Family trip to Buenos Aires"
+	hypeEvent.color = .blue
+	hypeEvent.date = Date()
+	hypeEvent.url = "capybararg.com"
+	
+	return hypeEvent
+}
+
+// Test data without image
+var testHypeEent2: HypeEvent {
+	let hypeEvent = HypeEvent()
+	
+	hypeEvent.title = "Solo trip to Sherbrooke"
+	hypeEvent.color = .orange
+	hypeEvent.date = Date()
+	
+	return hypeEvent
 }
