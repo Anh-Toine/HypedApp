@@ -8,7 +8,10 @@
 import SwiftUI
 
 struct ImagePicker: UIViewControllerRepresentable {
-
+	// Closes the ImagePicker sheet once an image has been selected
+	@Environment(\.presentationMode) var presentationMode
+	@Binding var imageData: Data?
+	
 	func makeCoordinator() -> Coordinator {
 		Coordinator(self)
 	}
@@ -33,6 +36,9 @@ class Coordinator: NSObject, UIImagePickerControllerDelegate & UINavigationContr
 	}
 	
 	func imagePickerController(_ picker: UIImagePickerController, didFinishPickingMediaWithInfo info: [UIImagePickerController.InfoKey : Any]) {
-		
+		if let image = info[.originalImage] as? UIImage {
+			parent.imageData = image.pngData()
+		}
+		parent.presentationMode.wrappedValue.dismiss()
 	}
 }
