@@ -8,8 +8,21 @@
 import SwiftUI
 
 struct DiscoverView: View {
+	@ObservedObject var data: DataService = DataService.shared
+
     var body: some View {
-        Text("Discover View")
+		ScrollView {
+			VStack {
+				if data.discoverHypeEvents.count == 0 {
+					Text("Nothing here it seems...")
+						.multilineTextAlignment(.center)
+				} else {
+					ForEach(data.discoverHypeEvents) { hypeEvent in
+						TileView(hypeEvent: hypeEvent)
+					}
+				}
+			}
+		}
     }
 }
 

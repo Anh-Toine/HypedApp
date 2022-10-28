@@ -12,6 +12,10 @@ struct HypedApp: App {
     var body: some Scene {
         WindowGroup {
             ContentView()
+				.onAppear {
+					DataService.shared.loadData()
+					DataService.shared.getDiscoverEvents()
+				}
         }
     }
 }

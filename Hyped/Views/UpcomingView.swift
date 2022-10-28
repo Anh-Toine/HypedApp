@@ -8,19 +8,20 @@
 import SwiftUI
 
 struct UpcomingView: View {
-	
-	var hypeEvents: [HypeEvent] = []
+	@ObservedObject var data = DataService.shared
+
+	//var hypeEvents: [HypeEvent] = []
 	@State var showingCreateView: Bool = false
 	
 	var body: some View {
 		ScrollView {
 			VStack {
 				
-				if hypeEvents.count == 0 {
+				if data.hypeEvents.count == 0 {
 					Text("Nothing to look forward to \n Create an event or check out the Discover tab!")
 						.multilineTextAlignment(.center)
 				} else {
-					ForEach(hypeEvents) { hypeEvent in
+					ForEach(data.hypeEvents) { hypeEvent in
 						TileView(hypeEvent: hypeEvent)
 					}
 				}
@@ -38,6 +39,6 @@ struct UpcomingView: View {
 }
 struct UpcomingView_Previews: PreviewProvider {
 	static var previews: some View {
-		UpcomingView(hypeEvents: [testHypeEent1, testHypeEent2])
+		UpcomingView()
 	}
 }

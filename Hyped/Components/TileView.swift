@@ -36,9 +36,9 @@ struct TileView: View {
 			HStack {
 				Image(systemName: "calendar")
 					.foregroundColor(.red)
-				Text("NOV 26")
+				Text(hypeEvent.dateAsString())
 				Spacer()
-				Text("Next Month")
+				Text(hypeEvent.timeFromNow())
 				Image(systemName: "clock.fill")
 					.foregroundColor(.blue)
 			}
@@ -54,7 +54,7 @@ struct TileView: View {
 
 struct TileView_Previews: PreviewProvider {
     static var previews: some View {
-		TileView(hypeEvent: testHypeEent1)
+		TileView(hypeEvent: testHypeEvent1)
 			.previewLayout(.sizeThatFits)
     }
 }
